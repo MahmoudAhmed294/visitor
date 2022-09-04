@@ -64,7 +64,7 @@ const Header = () => {
               }}
               onClick={changeLanguage}
             >
-              {t("language")}
+              {t("العربيه")}
             </Button>
           </Grid>
         </Container>
