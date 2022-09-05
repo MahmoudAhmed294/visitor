@@ -23,10 +23,10 @@ const SearchForm = () => {
   const pageNumber = useAppSelector(getPageNumber);
 
   useEffect(() => {
-    if (pageNumber > 1) {
+    if (pageNumber >= 1) {
       dispatch(getSearchResult({ ...searchValue, pageNumber }));
     }
-  }, [pageNumber, dispatch]);
+  }, [pageNumber]);
 
   const [searchValue, setSearchValue] = useState({
     buildNo: "",
